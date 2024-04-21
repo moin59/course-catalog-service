@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.controller.GreetingControllerUnitTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-21T20:05:20" hostname="Mds-MacBook-Pro" time="1.293">
+  <properties/>
+  <testcase name="retrieveGreeting()" classname="com.example.controller.GreetingControllerUnitTest" time="1.293"/>
+  <system-out><![CDATA[22:05:12.996 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.controller.GreetingControllerUnitTest]: GreetingControllerUnitTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:05:13.894 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.CourseCatelogServiceApplication for test class com.example.controller.GreetingControllerUnitTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-04-21T22:05:15.098+02:00  INFO 4098 --- [course-catalog-service] [    Test worker] c.e.c.GreetingControllerUnitTest         : Starting GreetingControllerUnitTest using Java 17.0.9 with PID 4098 (started by moin in /Users/moin/projects/Kotlin/course-catalog-service)
+2024-04-21T22:05:15.100+02:00  INFO 4098 --- [course-catalog-service] [    Test worker] c.e.c.GreetingControllerUnitTest         : No active profile set, falling back to 1 default profile: "default"
+2024-04-21T22:05:20.538+02:00  INFO 4098 --- [course-catalog-service] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-04-21T22:05:20.540+02:00  INFO 4098 --- [course-catalog-service] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-04-21T22:05:20.556+02:00  INFO 4098 --- [course-catalog-service] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2024-04-21T22:05:20.928+02:00  INFO 4098 --- [course-catalog-service] [    Test worker] c.e.c.GreetingControllerUnitTest         : Started GreetingControllerUnitTest in 6.666 seconds (process running for 10.345)
+2024-04-21T22:05:22.102+02:00  INFO 4098 --- [course-catalog-service] [    Test worker] c.example.controller.GreetingController  : Name is Moin
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
