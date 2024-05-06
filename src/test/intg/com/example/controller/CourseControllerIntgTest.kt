@@ -1,7 +1,11 @@
 package com.example.controller
 
 import com.example.dto.CourseDTO
+import com.example.repository.CourseRepository
+import com.example.util.courseEntityList
 import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient
@@ -18,6 +22,16 @@ class CourseControllerIntgTest {
     @Autowired
     lateinit var webTestClient: WebTestClient
 
+    @Autowired
+    lateinit var courseRepository: CourseRepository
+
+    @BeforeEach
+    fun setUp() {
+        courseRepository.deleteAll()
+        val course = courseEntityList()
+        courseRepository.saveAll(course)
+    }
+
     @Test
     fun addCourse() {
         val courseDTO = CourseDTO(1, "Build Restful APIs", "Moin U Man")
@@ -32,10 +46,23 @@ class CourseControllerIntgTest {
             .returnResult()
             .responseBody
 
-        println("Ki hocche ekhane: "+savedCourseDTO!!.id)
         Assertions.assertTrue {
             savedCourseDTO!!.id != null
         }
+    }
+
+    @Test
+    fun retrieveAllCourses(){
+        val courseDTOs = webTestClient
+            .get()
+            .uri("/v1/courses")
+            .exchange()
+            .expectStatus().isOk
+            .expectBodyList(CourseDTO::class.java)
+            .returnResult()
+            .responseBody
+
+        assertEquals(3,courseDTOs!!.size)
     }
 
 }

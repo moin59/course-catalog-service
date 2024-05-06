@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c974d85-8717-45e8-b2bc-04b7f877d284" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/example/entity/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/example/entity/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.example.controller.CourseControllerIntgTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.example.controller.CourseControllerIntgTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.example.controller.CourseControllerIntgTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.example.controller.CourseControllerIntgTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/controller/CourseController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/controller/CourseController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/entity/Course.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/entity/Course.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/service/CourseService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/service/CourseService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/intg/com/example/controller/CourseControllerIntgTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/intg/com/example/controller/CourseControllerIntgTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +53,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -68,6 +76,7 @@
     "Gradle.Build course-catelog-service.executor": "Run",
     "Gradle.CourseControllerIntgTest.addCourse.executor": "Run",
     "Gradle.CourseControllerIntgTest.executor": "Coverage",
+    "Gradle.CourseControllerIntgTest.retrieveAllCourses.executor": "Run",
     "Gradle.GreetingControllerIntgTest.executor": "Run",
     "Gradle.GreetingControllerIntgTest.retrieveGreeting.executor": "Run",
     "Gradle.GreetingControllerUnitTest.retrieveGreeting.executor": "Run",
@@ -91,6 +100,7 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="com.example.exception" />
       <recent name="com.example.service" />
       <recent name="com.example.repository" />
     </key>
@@ -147,7 +157,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GreetingControllerIntgTest.retrieveGreeting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CourseControllerIntgTest.retrieveAllCourses" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -160,7 +170,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.controller.GreetingControllerIntgTest.retrieveGreeting&quot;" />
+            <option value="&quot;com.example.controller.CourseControllerIntgTest.retrieveAllCourses&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -207,10 +217,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.CourseCatalogServiceApplicationKt" />
+        <item itemvalue="Gradle.CourseControllerIntgTest.retrieveAllCourses" />
         <item itemvalue="Gradle.CourseControllerIntgTest.addCourse" />
         <item itemvalue="Gradle.CourseControllerIntgTest" />
         <item itemvalue="Gradle.GreetingControllerUnitTest.retrieveGreeting" />
-        <item itemvalue="Gradle.GreetingControllerIntgTest.retrieveGreeting" />
       </list>
     </recent_temporary>
   </component>
