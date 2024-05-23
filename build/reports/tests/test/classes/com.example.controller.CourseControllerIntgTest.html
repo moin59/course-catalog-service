@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.785s</div>
+<div class="counter">2.906s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,8 +78,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">retrieveAllCourses()</td>
-<td class="success">2.785s</td>
+<td class="success">deleteCourse()</td>
+<td class="success">2.906s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,8 +87,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>23:09:30.062 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.controller.CourseControllerIntgTest]: CourseControllerIntgTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-23:09:30.924 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.CourseCatelogServiceApplication for test class com.example.controller.CourseControllerIntgTest
+<pre>22:57:34.701 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.controller.CourseControllerIntgTest]: CourseControllerIntgTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:57:35.560 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.CourseCatelogServiceApplication for test class com.example.controller.CourseControllerIntgTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -98,43 +98,45 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.5)
 
-2024-05-06T23:09:32.232+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] c.e.controller.CourseControllerIntgTest  : Starting CourseControllerIntgTest using Java 17.0.9 with PID 2113 (started by moin in /Users/moin/projects/Kotlin/course-catalog-service)
-2024-05-06T23:09:32.236+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] c.e.controller.CourseControllerIntgTest  : The following 1 profile is active: &quot;test&quot;
-2024-05-06T23:09:34.010+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-06T23:09:34.247+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 226 ms. Found 1 JPA repository interface.
-2024-05-06T23:09:35.658+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
-2024-05-06T23:09:35.675+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-05-06T23:09:35.676+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-05-06T23:09:35.796+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-05-06T23:09:35.808+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3522 ms
-2024-05-06T23:09:35.883+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-06T23:09:36.149+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-05-06T23:09:36.163+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-05-06T23:09:36.231+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2024-05-06T23:09:36.595+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-06T23:09:36.686+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-05-06T23:09:36.730+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-05-06T23:09:37.184+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-05-06T23:09:37.268+02:00  WARN 2113 --- [course-catalog-service] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-05-06T23:09:38.775+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-23T22:57:36.872+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] c.e.controller.CourseControllerIntgTest  : Starting CourseControllerIntgTest using Java 17.0.9 with PID 2139 (started by moin in /Users/moin/projects/Kotlin/course-catalog-service)
+2024-05-23T22:57:36.873+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] c.e.controller.CourseControllerIntgTest  : The following 1 profile is active: &quot;test&quot;
+2024-05-23T22:57:38.837+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T22:57:39.112+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 257 ms. Found 1 JPA repository interface.
+2024-05-23T22:57:40.877+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-23T22:57:40.897+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T22:57:40.899+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T22:57:41.056+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T22:57:41.073+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4149 ms
+2024-05-23T22:57:41.166+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T22:57:41.468+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-23T22:57:41.487+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T22:57:41.557+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-23T22:57:41.984+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-23T22:57:42.111+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-23T22:57:42.246+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-23T22:57:42.710+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T22:57:42.804+02:00  WARN 2139 --- [course-catalog-service] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-23T22:57:44.113+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: drop table if exists courses cascade 
 Hibernate: drop sequence if exists courses_seq
 Hibernate: create sequence courses_seq start with 1 increment by 50
 Hibernate: create table courses (id integer not null, category varchar(255), name varchar(255), primary key (id))
-2024-05-06T23:09:38.849+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-05-06T23:09:39.799+02:00  WARN 2113 --- [course-catalog-service] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-05-06T23:09:40.735+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 50515 (http) with context path ''
-2024-05-06T23:09:40.762+02:00  INFO 2113 --- [course-catalog-service] [    Test worker] c.e.controller.CourseControllerIntgTest  : Started CourseControllerIntgTest in 9.281 seconds (process running for 13.235)
+2024-05-23T22:57:44.181+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T22:57:45.209+02:00  WARN 2139 --- [course-catalog-service] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T22:57:46.185+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 50420 (http) with context path ''
+2024-05-23T22:57:46.211+02:00  INFO 2139 --- [course-catalog-service] [    Test worker] c.e.controller.CourseControllerIntgTest  : Started CourseControllerIntgTest in 10.04 seconds (process running for 13.815)
 Hibernate: select c1_0.id,c1_0.category,c1_0.name from courses c1_0
 Hibernate: select next value for courses_seq
 Hibernate: select next value for courses_seq
 Hibernate: insert into courses (category,name,id) values (?,?,?)
 Hibernate: insert into courses (category,name,id) values (?,?,?)
 Hibernate: insert into courses (category,name,id) values (?,?,?)
-2024-05-06T23:09:43.543+02:00  INFO 2113 --- [course-catalog-service] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-05-06T23:09:43.545+02:00  INFO 2113 --- [course-catalog-service] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-05-06T23:09:43.555+02:00  INFO 2113 --- [course-catalog-service] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-Hibernate: select c1_0.id,c1_0.category,c1_0.name from courses c1_0
+Hibernate: insert into courses (category,name,id) values (?,?,?)
+2024-05-23T22:57:49.203+02:00  INFO 2139 --- [course-catalog-service] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-23T22:57:49.205+02:00  INFO 2139 --- [course-catalog-service] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-23T22:57:49.215+02:00  INFO 2139 --- [course-catalog-service] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+Hibernate: select c1_0.id,c1_0.category,c1_0.name from courses c1_0 where c1_0.id=?
+Hibernate: delete from courses where id=?
 </pre>
 </span>
 </div>
@@ -146,7 +148,7 @@ Hibernate: select c1_0.id,c1_0.category,c1_0.name from courses c1_0
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.7</a> at 6 May 2024, 23:09:46</p>
+<a href="http://www.gradle.org">Gradle 8.7</a> at 23 May 2024, 22:57:51</p>
 </div>
 </div>
 </body>

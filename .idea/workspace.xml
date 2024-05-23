@@ -7,11 +7,7 @@
     <list default="true" id="3c974d85-8717-45e8-b2bc-04b7f877d284" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/com/example/entity/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/com/example/entity/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.example.controller.CourseControllerIntgTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.example.controller.CourseControllerIntgTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.example.controller.CourseControllerIntgTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.example.controller.CourseControllerIntgTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/controller/CourseController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/controller/CourseController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/entity/Course.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/entity/Course.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/service/CourseService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/service/CourseService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/intg/com/example/controller/CourseControllerIntgTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/intg/com/example/controller/CourseControllerIntgTest.kt" afterDir="false" />
     </list>
@@ -28,6 +24,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -75,8 +74,10 @@
     "Gradle.Build course-catalog-service.executor": "Run",
     "Gradle.Build course-catelog-service.executor": "Run",
     "Gradle.CourseControllerIntgTest.addCourse.executor": "Run",
+    "Gradle.CourseControllerIntgTest.deleteCourse.executor": "Run",
     "Gradle.CourseControllerIntgTest.executor": "Coverage",
     "Gradle.CourseControllerIntgTest.retrieveAllCourses.executor": "Run",
+    "Gradle.CourseControllerIntgTest.updateCourse.executor": "Run",
     "Gradle.GreetingControllerIntgTest.executor": "Run",
     "Gradle.GreetingControllerIntgTest.retrieveGreeting.executor": "Run",
     "Gradle.GreetingControllerUnitTest.retrieveGreeting.executor": "Run",
@@ -108,31 +109,7 @@
       <recent name="com.example.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.CourseCatalogServiceApplicationKt">
-    <configuration name="CourseControllerIntgTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.controller.CourseControllerIntgTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.CourseControllerIntgTest.deleteCourse">
     <configuration name="CourseControllerIntgTest.addCourse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -147,6 +124,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.example.controller.CourseControllerIntgTest.addCourse&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CourseControllerIntgTest.deleteCourse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.controller.CourseControllerIntgTest.deleteCourse&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -181,7 +182,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GreetingControllerUnitTest.retrieveGreeting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CourseControllerIntgTest.updateCourse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -194,7 +195,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.controller.GreetingControllerUnitTest.retrieveGreeting&quot;" />
+            <option value="&quot;com.example.controller.CourseControllerIntgTest.updateCourse&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -216,11 +217,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CourseControllerIntgTest.deleteCourse" />
         <item itemvalue="Kotlin.CourseCatalogServiceApplicationKt" />
+        <item itemvalue="Gradle.CourseControllerIntgTest.updateCourse" />
         <item itemvalue="Gradle.CourseControllerIntgTest.retrieveAllCourses" />
         <item itemvalue="Gradle.CourseControllerIntgTest.addCourse" />
-        <item itemvalue="Gradle.CourseControllerIntgTest" />
-        <item itemvalue="Gradle.GreetingControllerUnitTest.retrieveGreeting" />
       </list>
     </recent_temporary>
   </component>

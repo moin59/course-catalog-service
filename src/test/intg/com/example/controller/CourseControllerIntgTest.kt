@@ -1,6 +1,7 @@
 package com.example.controller
 
 import com.example.dto.CourseDTO
+import com.example.entity.Course
 import com.example.repository.CourseRepository
 import com.example.util.courseEntityList
 import org.junit.jupiter.api.Assertions
@@ -63,6 +64,43 @@ class CourseControllerIntgTest {
             .responseBody
 
         assertEquals(3,courseDTOs!!.size)
+    }
+
+    @Test
+    fun updateCourse(){
+        val course = Course(null,
+            "Build RestFul APis using SpringBoot and Kotlin", "Development")
+        courseRepository.save(course)
+
+        val updatedCourseDTO = CourseDTO(null,
+            "Build RestFul APis using SpringBoot and Kotlin1", "Development")
+
+        val updatedCourse = webTestClient
+            .put()
+            .uri("/v1/courses/{courseId}", course.id)
+            .bodyValue(updatedCourseDTO)
+            .exchange()
+            .expectStatus().isOk
+            .expectBodyList(CourseDTO::class.java)
+            .returnResult()
+            .responseBody
+
+        assertEquals("Build RestFul APis using SpringBoot and Kotlin", course!!.name)
+
+    }
+
+    @Test
+    fun deleteCourse(){
+        val course = Course(null,
+            "Build RestFul APis using SpringBoot and Kotlin", "Development")
+        courseRepository.save(course)
+
+        val updatedCourse = webTestClient
+            .delete()
+            .uri("/v1/courses/{courseId}", course.id)
+            .exchange()
+            .expectStatus().isNoContent
+
     }
 
 }
